@@ -79,6 +79,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV["MY_APP_DATABASE_URL"] %>
   database: vue_blog_production
   username: vue_blog
   password: <%= ENV["VUE_BLOG_DATABASE_PASSWORD"] %>
